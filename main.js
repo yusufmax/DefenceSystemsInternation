@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const urlLang = urlParams.get("lang");
   let currentLang = "uz"; // Default is Uzbek 'uz'
   
-  if (urlLang && ["uz", "ru", "en"].includes(urlLang)) {
+  if (urlLang && ["uz", "en"].includes(urlLang)) {
     currentLang = urlLang;
     localStorage.setItem("dsi_lang", urlLang);
   } else {
