@@ -112,7 +112,7 @@ window.translations = {
     form_error: "Xatolik yuz berdi. Iltimos, ma'lumotlarni tekshiring va qayta urinib ko'ring.",
 
     address_label: "Yuridik manzil",
-    address_val: "Toshkent shahri, Yunusobod tumani, Amir Temur shoh ko'chasi, 107B",
+    address_val: "Toshkent shahri, Shayxontoxur tumani, Labzak ko'chasi, Urda mahallasi, 1A-bino",
     email_label: "Elektron pochta",
     email_val: "info@defence-systems.uz",
     
@@ -222,7 +222,7 @@ window.translations = {
     form_error: "An error occurred. Please verify your entries and try again.",
 
     address_label: "Legal Address",
-    address_val: "107B Amir Temur Avenue, Yunusabad District, Tashkent, Uzbekistan",
+    address_val: "Urda Mahalla, Labzak Street, Building 1A, Shaykhantakhur District, Tashkent, Uzbekistan",
     email_label: "Email",
     email_val: "info@defence-systems.uz",
     

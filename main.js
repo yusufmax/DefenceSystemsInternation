@@ -474,7 +474,7 @@ document.addEventListener("DOMContentLoaded", () => {
     card.addEventListener("click", (e) => {
       // If expanded and clicking, open Google Maps
       if (card.classList.contains("expanded")) {
-        window.open("https://maps.google.com/?q=41.3775,69.2401", "_blank");
+        window.open("https://maps.google.com/?q=41.3267,69.2478", "_blank");
         return;
       }
       card.classList.toggle("expanded");
