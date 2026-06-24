@@ -959,7 +959,7 @@ a {
    CONTACT & FOOTER SECTION
    -------------------------------------------------------------------------- */
 .contact-section {
-  padding: 120px 6% 0 6%;
+  padding: 120px 6% 100px 6%;
   background: linear-gradient(to top, #080807 0%, var(--color-bg-matte) 100%);
   border-top: 1px solid rgba(255, 255, 255, 0.02);
 }
@@ -970,7 +970,6 @@ a {
   display: grid;
   grid-template-columns: 1fr 1.05fr;
   gap: 6rem;
-  margin-bottom: 100px;
 }
 
 .contact-info {
