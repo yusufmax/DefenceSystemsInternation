@@ -9,10 +9,10 @@
 
 /* Reset and Variables */
 :root {
-  /* Reduced color scheme: Deepest stealth grays & matte blacks, minimal khaki, sharp gold accents */
-  --color-bg-matte: #0a0a09;
-  --color-bg-charcoal: #121210;
-  --color-bg-card: #151513;
+  /* Reduced color scheme: Deep khaki and olive tones for military aesthetic */
+  --color-bg-matte: #1c1d18;
+  --color-bg-charcoal: #23251e;
+  --color-bg-card: #2a2c24;
   --color-accent-gold: #b68a3c;
   --color-accent-gold-rgb: 182, 138, 60;
   --color-accent-gold-hover: #d2a454;
@@ -212,7 +212,7 @@ a {
 }
 
 .header-bar.scrolled {
-  background: rgba(10, 10, 9, 0.96);
+  background: rgba(28, 29, 24, 0.96);
   backdrop-filter: blur(16px);
   height: 75px;
   border-bottom: 1px solid rgba(182, 138, 60, 0.08);
@@ -402,7 +402,7 @@ a {
   align-items: center;
   justify-content: center;
   padding: 130px 6% 90px 6%;
-  background: radial-gradient(circle at 50% 20%, #151513 0%, var(--color-bg-matte) 80%);
+  background: radial-gradient(circle at 50% 20%, var(--color-bg-card) 0%, var(--color-bg-matte) 80%);
   overflow: hidden;
   z-index: 1;
 }
