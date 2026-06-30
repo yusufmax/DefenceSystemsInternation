@@ -273,15 +273,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const border = document.createElementNS("http://www.w3.org/2000/svg", "path");
       border.setAttribute("d", "M 8,10 L 25,7 L 40,8 L 52,15 L 68,14 L 75,20 L 84,18 L 94,22 L 95,28 L 88,32 L 80,30 L 76,27 L 70,30 L 67,42 L 60,40 L 52,48 L 40,43 L 30,42 L 15,35 Z");
-      border.setAttribute("fill", "rgba(182, 138, 60, 0.04)");
-      border.setAttribute("stroke", "rgba(182, 138, 60, 0.2)");
+      border.setAttribute("fill", "rgba(15, 39, 71, 0.04)");
+      border.setAttribute("stroke", "rgba(15, 39, 71, 0.2)");
       border.setAttribute("stroke-width", "0.5");
       svg.appendChild(border);
 
       const hqRing = document.createElementNS("http://www.w3.org/2000/svg", "circle");
       hqRing.setAttribute("cx", "74.7"); hqRing.setAttribute("cy", "31.2");
       hqRing.setAttribute("r", "5"); hqRing.setAttribute("fill", "none");
-      hqRing.setAttribute("stroke", "#b68a3c"); hqRing.setAttribute("stroke-width", "0.75");
+      hqRing.setAttribute("stroke", "#0F2747"); hqRing.setAttribute("stroke-width", "0.75");
       const animR = document.createElementNS("http://www.w3.org/2000/svg", "animate");
       animR.setAttribute("attributeName", "r"); animR.setAttribute("values", "2;10;2");
       animR.setAttribute("dur", "2s"); animR.setAttribute("repeatCount", "indefinite");
@@ -294,7 +294,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const hqDot = document.createElementNS("http://www.w3.org/2000/svg", "circle");
       hqDot.setAttribute("cx", "74.7"); hqDot.setAttribute("cy", "31.2");
-      hqDot.setAttribute("r", "2"); hqDot.setAttribute("fill", "#b68a3c");
+      hqDot.setAttribute("r", "2"); hqDot.setAttribute("fill", "#0F2747");
       svg.appendChild(hqDot);
 
       container.appendChild(svg);
@@ -310,8 +310,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Gold atmosphere glow
       const glow = context.createRadialGradient(cx, cy, s * 0.92, cx, cy, s * 1.35);
-      glow.addColorStop(0, "rgba(182, 138, 60, 0.07)");
-      glow.addColorStop(1, "rgba(182, 138, 60, 0)");
+      glow.addColorStop(0, "rgba(15, 39, 71, 0.07)");
+      glow.addColorStop(1, "rgba(15, 39, 71, 0)");
       context.beginPath();
       context.arc(cx, cy, s * 1.35, 0, 2 * Math.PI);
       context.fillStyle = glow;
@@ -320,9 +320,9 @@ document.addEventListener("DOMContentLoaded", () => {
       // Globe background sphere
       context.beginPath();
       context.arc(cx, cy, s, 0, 2 * Math.PI);
-      context.fillStyle = "#0a0a09";
+      context.fillStyle = "#ffffff";
       context.fill();
-      context.strokeStyle = "rgba(182, 138, 60, 0.22)";
+      context.strokeStyle = "rgba(15, 39, 71, 0.22)";
       context.lineWidth = 1.2 * sf;
       context.stroke();
 
@@ -331,14 +331,14 @@ document.addEventListener("DOMContentLoaded", () => {
       // Graticule grid
       context.beginPath();
       path(d3.geoGraticule()());
-      context.strokeStyle = "rgba(255, 255, 255, 0.06)";
+      context.strokeStyle = "rgba(15, 39, 71, 0.1)";
       context.lineWidth = 0.4 * sf;
       context.stroke();
 
       // All country outlines (wireframe)
       context.beginPath();
       countries.features.forEach(f => path(f));
-      context.strokeStyle = "rgba(255, 255, 255, 0.14)";
+      context.strokeStyle = "rgba(15, 39, 71, 0.15)";
       context.lineWidth = 0.4 * sf;
       context.stroke();
 
@@ -346,7 +346,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (uzbekistan) {
         context.beginPath();
         path(uzbekistan);
-        context.strokeStyle = "rgba(182, 138, 60, 0.55)";
+        context.strokeStyle = "rgba(15, 39, 71, 0.55)";
         context.lineWidth = 1.4 * sf;
         context.stroke();
       }
@@ -357,7 +357,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (p) {
           context.beginPath();
           context.arc(p[0], p[1], 1.15 * sf, 0, 2 * Math.PI);
-          context.fillStyle = "rgba(182, 138, 60, 0.82)";
+          context.fillStyle = "rgba(15, 39, 71, 0.82)";
           context.fill();
         }
       });
@@ -371,20 +371,20 @@ document.addEventListener("DOMContentLoaded", () => {
         const ringR = (3.5 + pulse * 4) * sf;
         context.beginPath();
         context.arc(tashkent[0], tashkent[1], ringR, 0, 2 * Math.PI);
-        context.strokeStyle = `rgba(182, 138, 60, ${0.55 - pulse * 0.45})`;
+        context.strokeStyle = `rgba(15, 39, 71, ${0.55 - pulse * 0.45})`;
         context.lineWidth = 0.8 * sf;
         context.stroke();
 
         // Inner glow
         context.beginPath();
         context.arc(tashkent[0], tashkent[1], 5 * sf, 0, 2 * Math.PI);
-        context.fillStyle = "rgba(182, 138, 60, 0.08)";
+        context.fillStyle = "rgba(15, 39, 71, 0.08)";
         context.fill();
 
         // Center dot
         context.beginPath();
         context.arc(tashkent[0], tashkent[1], 2 * sf, 0, 2 * Math.PI);
-        context.fillStyle = "#b68a3c";
+        context.fillStyle = "#0F2747";
         context.fill();
       }
     }
