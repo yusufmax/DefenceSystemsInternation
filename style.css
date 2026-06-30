@@ -155,7 +155,7 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: var(--color-bg-matte);
-  background: linear-gradient(135deg, #1b3d6d, var(--color-accent-gold));
+  background-color: var(--color-accent-gold);
   border: 1px solid var(--color-accent-gold);
   border-radius: 1px;
   cursor: pointer;
@@ -185,7 +185,7 @@ a {
 .btn-gold:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 30px rgba(15, 39, 71, 0.35);
-  background: linear-gradient(135deg, var(--color-accent-gold-hover), #0F2747);
+  background-color: var(--color-accent-gold-hover);
 }
 
 .btn-gold:active {
