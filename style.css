@@ -155,7 +155,7 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: var(--color-bg-matte);
-  background: linear-gradient(135deg, #d4af37, var(--color-accent-gold));
+  background: linear-gradient(135deg, #1b3d6d, var(--color-accent-gold));
   border: 1px solid var(--color-accent-gold);
   border-radius: 1px;
   cursor: pointer;
@@ -962,7 +962,7 @@ a {
   background: #1A1D21; /* Graphite Black */
   border-top: 1px solid rgba(0, 0, 0, 0.05);
   --color-text-bright: #F8F9FA;
-  --color-text-muted: #5A6673; /* Gunmetal Gray */
+  --color-text-muted: rgba(248, 249, 250, 0.7); /* Readable on dark background */
 }
 
 .contact-container {
@@ -1344,9 +1344,9 @@ a {
 
 /* Contact Form - Stealth Dark Design */
 .contact-form-wrapper {
-  background: var(--color-bg-card);
-  border: var(--border-premium);
-  border-radius: 2px;
+  background: #5A6673; /* Gunmetal Gray */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
   padding: 3.5rem;
   box-shadow: var(--shadow-stealth);
   opacity: 0;
@@ -1378,27 +1378,27 @@ a {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  color: var(--color-text-muted);
+  color: #F8F9FA; /* Pure White text on Gunmetal background */
   transition: var(--transition-fast);
 }
 
 .form-input, .form-textarea {
-  background: rgba(10, 10, 9, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.04);
-  border-radius: 1px;
+  background: #F8F9FA; /* Pure White */
+  border: 1px solid transparent;
+  border-radius: 2px;
   padding: 1rem 1.25rem;
-  color: var(--color-text-bright);
+  color: #1A1D21; /* Graphite Black */
   font-family: var(--font-sans);
   font-size: 0.88rem;
   transition: var(--transition-normal);
 }
 
-/* Highlight focus border with a laser gold trace */
+/* Highlight focus border */
 .form-input:focus, .form-textarea:focus {
   outline: none;
   border-color: var(--color-accent-gold);
-  background: rgba(10, 10, 9, 0.9);
-  box-shadow: 0 0 15px rgba(15, 39, 71, 0.08);
+  background: #ffffff;
+  box-shadow: 0 0 15px rgba(15, 39, 71, 0.15);
 }
 
 .form-textarea {
