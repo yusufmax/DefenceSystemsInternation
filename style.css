@@ -418,9 +418,8 @@ a {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  filter: brightness(0.9); opacity: 0.1; mix-blend-mode: multiply; /* Highly muted khaki gold */
-  opacity: 0.04;
-  mix-blend-mode: screen;
+  opacity: 0.06;
+  mix-blend-mode: multiply;
   pointer-events: none;
   z-index: -1;
   transition: var(--transition-slow);
