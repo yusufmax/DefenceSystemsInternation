@@ -465,8 +465,7 @@ a {
 
 .hero-logo-box img {
   height: 90px;
-  filter: invert(1) brightness(1.25);
-  mix-blend-mode: screen;
+  filter: brightness(0.15); /* Make the white logo dark to be visible on white background */
 }
 
 @keyframes floatLogo {
@@ -1465,8 +1464,7 @@ a {
 
 .footer-logo img {
   height: 32px;
-  filter: invert(1) brightness(1.15);
-  mix-blend-mode: screen;
+  /* Original white logo is visible on dark footer */
 }
 
 .footer-logo-text {
@@ -1620,6 +1618,6 @@ a {
   }
 }
 
-.header-bar.scrolled .logo-icon-img { filter: invert(1) brightness(1.2); mix-blend-mode: screen; }
+.header-bar.scrolled .logo-icon-img { filter: none; }
 .header-bar.scrolled .logo-text-main { color: #F8F9FA; }
 .header-bar.scrolled .nav-link { color: #F8F9FA; }
